@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Exp3</title>    
+    <style>
+        .container
+        {
+           text-align: center;
+           border: 2px solid;
+           width: 1200px;
+           height: 80px;
+           margin: auto;
+        }
+        .container-1
+        {
+            text-align: center;
+            width: 1200px;
+            height: 70px;
+            border: 2px solid;
+            margin: auto;
+        }
+        .container-2
+        {   
+            display: flex;
+            height: 400px;
+            width: 1200px;
+            margin: auto;
+            border: 2px solid;
+        }
+        .container-3
+        {
+            text-align: center;
+            border: 2px solid;
+            height: 400px;
+            width: 600px;   
+            margin: auto;
+        }
+        .container-4
+        {
+            width: 1200px;
+            height: 50px;
+            border: 2px solid;
+            margin: auto;
+            text-align: center;
+        }
+        @media all and (max-width: 1024px)
+        {
+            .container-2
+        {   
+            display: grid;
+            height: auto;
+            width: 1200px;
+            margin: auto;
+            border: 2px solid;
+        } 
+        .container-3
+        {
+            text-align: center;
+            border: 2px solid;
+            height: 400px;
+            width: 1200px;   
+            margin: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Header</h1>
+    </header>
+    <nav class="container-1">
+        <h1>Navigation bar</h1>
+    </nav>
+    <div class="container-2">
+        <div class="container-3">
+            <header>
+                <h1>Article 1</h1>
+            </header>
+            <p>If you're buying a new laptop, there are a slew of options: desktop-rivaling powerhouses, 2-in-1s, MacBooks, gaming, value-conscious machines,and more.
+                This guide takes you through our favorite choices in the market today 
+            </p>
+        </div>
+        <div class="container-3">
+            <header>
+                <h1>Article 2</h1>
+            </header>
+            <p>The GeForce RTX 3050 Ti is a mainstream GPU for gaming laptops, sitting below the RTX 3060 in the product stack, 
+                and offering us a follow up to last year's GTX 1660 Ti and GTX 1650 for laptops.
+            </p>
+        </div>
+    </div>
+    
+    <footer class="container-4">
+        <p>Copyright 2021 Tushar</p>
+    </footer>
+</body>
+</html>
